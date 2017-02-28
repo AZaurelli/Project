@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>immigration</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="page1">
+    <div id="header">
+      <div id="nav">
+        <ul id="topnav">
+          <li id="logo">
+            <a id="logo" href=""><img height="60px;" src="images/Logo.png"></a>
+          </li>
+          <li id="word">
+            <a  onclick="initScroll('page2'); return false;" href="#"><strong>Immigrant stories</strong></a>
+          </li>
+          <li id="word">
+            <a  onclick="initScroll('page3'); return false;" href="#"><strong>Deportation</strong></a>
+          </li id="word">
+          <li>
+            <a  onclick="initScroll('page4'); return false;" href="#"><strong>Solution</strong></a>
+          </li>
+          <li id="word">
+            <a href="#" id="top" onclick="toTop(); return false;">click to go to top</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div id="content">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img id="pic" src="http://coyotelegal.com/wp-content/uploads/2016/12/immigration.jpg" style="max-height: 700px;">
+        </div>
+        <div class="mySlides fade">
+          <img id="pic" src="https://immigrationlawnj.com/wp-content/uploads/facing-deportation.jpg" style="max-height: 700px;">
+        </div>
+        <div class="mySlides fade">
+          <img id="pic" src="http://media4.s-nbcnews.com/j/newscms/2017_07/1900991/170213-milwaukee-protest-immigration-ok-1629_5619dc2b4f55c921746c3ba87f26f47f.nbcnews-ux-2880-1000.jpg" style="max-height: 700px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="page2">
+    <h1>Immigrant Stories</h1>
+    <br>
+    <br>
+    <br>
+
+    <div id="hi">
+        <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');"><img src="images/Asianlady.jpg"></a>
+        <a href="javascript:void(0)" onclick=
+        "toggle_visibility('popupBoxTwoPosition');"><img src="images/Whitelady.jpg"></a>
+        <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxThreePosition');"><img src="http://4.bp.blogspot.com/-MVWWSNwJIC0/Tq2f6bBrfdI/AAAAAAAAAXw/9GVcWqtcPgw/s1600/BERSHENYI%2BSTEPHEN.jpg"></a>
+        <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxFourPosition');"><img src="http://3.bp.blogspot.com/-ryYAAP0IYU0/Ts0fm2scuFI/AAAAAAAAAa0/VMW-Utbchg8/s1600/SCALZO%2BJOHN.jpg"></a>
+        <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxFivePosition');"><img src="http://4.bp.blogspot.com/-prBdUu5Oo-A/Ts0daNRMYgI/AAAAAAAAAao/BZq64Qw-y9o/s1600/GOTTARDO%2BHANYA.jpg"></a>
+        <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxSixPosition');"><img src="images/Guy.jpg"></a>
+        <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxSevenPosition');"><img src="images/Man.jpg"></a>        
+        <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxEightPosition');"><img src="http://1.bp.blogspot.com/-9q9BdPhIveM/Tq2i9F6B3EI/AAAAAAAAAX8/dvAhHCKY9WU/s1600/LEE%2BCALVIN.jpg"></a>
+    </div>
+  </div>
+
+
+  <div id="page3">
+  <br>
+  <br>
+  <br>
+    <h1>U.S. Deportations by Country in 2013</h1>
+    <p class="description">Removals, Returns. Click the points to expand them.</p>
+    <div class="distribution-map">
+        <!-- This was broken for a while because imgur :( -->
+        <!-- I don't trust this host. Image here if it goes down: http://i.imgur.com/M7aUkuS.png -->
+        <img src="https://cdn.pixabay.com/photo/2014/04/02/16/31/map-307534_960_720.png">
+        <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
+        <button class="map-point" style="top:51%;left:20%">
+            <div class="content">
+                <div class="centered-y">
+                     <h2> Mexico</h2>
+                    <p>Total: 443,256</p>
+                    <p>Returns: 131,970</p>
+                    <p>Removals: 311,286</p?
+                </div>
+            </div>
+        </button>
+        <button class="map-point" style="top:33%;left:47%">
+            <div class="content">
+                <div class="centered-y">
+                    <h2>United Kingdom</h2>
+                    <p>Total: 1,576</p>
+                    <p>Returns: 1,353</p>
+                    <p>Removals: 223</p>
+                </div>
+            </div>
+        </button>
+        <button class="map-point" style="top:76%;left:82.5%">
+            <div class="content">
+                <div class="centered-y">
+                     <h2>Australia</h2>
+                    <p>Total: 381</p>
+                    <p>Returns: 335</p>
+                    <p>Removal: 46</p>
+                </div>
+            </div>
+        </button>
+        <button class="map-point" style="top:25%;left:16%">
+            <div class="content">
+                <div class="centered-y">
+                    <h2>Canada</h2>
+                    <p>Total: 27,839</p>
+                  <p> Returns: 27,039</p>
+                  <p> Removals: 800</p>
+                </div>
+            </div>
+        </button>
+        <button class="map-point" style="top:25%;left:70%">
+            <div class="content">
+                <div class="centered-y">
+                    <h2>Russia</h2>
+                    <p>Total: 2,563</p>
+                    <p> Returns:2,441</p>
+                  <p> Removals:122</p>
+                </div>
+            </div>
+        </button>
+        <button class="map-point" style="top:45%;left:75%">
+            <div class="content">
+                <div class="centered-y">
+                    <h2>China</h2>
+                    <p>Total: 12,568</p>
+                    <p> Returns: 11,780</p>
+                   <p> Removals: 788</p>
+                </div>
+            </div>
+        </button>
+        <button class="map-point" style="top:42%;left:55%">
+            <div class="content">
+                <div class="centered-y">
+                    <h2>Ukraine</h2>
+                    <p>Total: 2,700</p>
+                    <p>Returns: 2,589</p>
+                    <p>Removals: 111</p>
+                </div>
+            </div>
+            <button class="map-point" style="top:55%;left:75%">
+            <div class="content">
+                <div class="centered-y">
+                    <h2>Myanamr</h2>
+                    <p>Total: 2,341</p>
+                    <p>Returns: 2,337</p>
+                    <p>Removals: 4</p>
+                </div>
+            </div>
+        </button>
+    </div>
+    <p class="description">Statatics and all information gotten from International Business Times</p>
+      <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+    </div>
+  </div>
+
+    <div id="page4">
+      <h1>Solution</h1>
+      <br>
+      <br>
+      <br>
+      <div id="left">
+        <div id="pictureleft">
+          <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxNinePosition');"><img src="http://www.ardems.org/wp-content/uploads/2016/11/daca.jpg"></a>
+        </div>
+        <div id="pictureleft">
+          <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxTenPosition');"><img src="https://s-media-cache-ak0.pinimg.com/originals/da/07/75/da0775b873faf7ffa1ed3468ef8b3d87.jpg"></a>
+        </div>
+      </div>
+      <div id="right">
+        <div id="pictureright">
+          <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxElevenPosition');"><img src="http://www.nicholascrowley.us/wp-content/uploads/2016/01/dwi-lawyer-ny.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <script>
+          var marginY = 0;
+          var destination = 0;
+          var speed = 10;
+          var scroller = null;
+
+          function initScroll(elementId){
+              destination = document.getElementById(elementId).offsetTop;
+             
+              scroller = setTimeout(function(){
+                initScroll(elementId);
+              }, 1);
+
+              marginY = marginY + speed;
+
+              if(marginY >= destination){
+                clearTimeout(scroller);
+              }
+
+              window.scroll(0, marginY);
+
+
+              //console.log(destination);
+          } 
+
+          function toTop(){
+             scroller = setTimeout(function(){
+                toTop();
+              }, 1);
+
+              marginY = marginY - speed;
+
+              if(marginY <= 0){
+                clearTimeout(scroller);
+              }
+
+              window.scroll(0, marginY);
+            }
+    </script>
+    <script type="text/javascript" src="js/script.js"></script> 
+
+    <div id="popupBoxOnePosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                    <img src="images/Asianlady.jpg">
+                      <p>
+                      <br>
+                      <strong>Intro:</strong> Adelia Asplund came to the United States from Belize in 1979. She was eighteen. Asplund came in search of a better life but she treasures the one she left behind.
+                      <br>
+                      <br>
+                      <strong>Asplund:</strong> My dad farmed and hunted. He would go hunting in the forest and we wouldn’t see him for along time. When he came home he would bring a deer and then he started getting tigers and alligators. People heard about him and soon American hunters came to have my dad guide them in the jungle.
+                      <br>
+                      <br>
+                      While my dad was hunting, my mom would go and buy stuff in Mexico and Guatemala and then we would resell it. On weekends, we kids would go door-to-door and sell the things she brought back.
+                      <br>
+                      <br>
+                      My mom’s other job was raising kids because every year she had kids. She had thirteen kids and we lived in a tiny house. There were only two bedrooms, one for the boys and one for the girls. Our beds were along the wall like bunkbeds. Dad and Mom lived in the middle of the house and slept in hammocks. The kitchen was outside and we had to do the laundry outside by hand, lots of scrubbing. We had to bring our water from far away. It was two miles from the house.
+                      <br>
+                      <br>
+                      The boys would go for water very early everyday and then start farming. We raised all of our food. We all had to work. My parents took us out of school when we were very young because we couldn’t afford it. We had no money to buy the pencils, paper and books that you needed to go to school.
+                      <br>
+                      <br>
+                      Our parents took me and my sisters out of school in fourth grade. They didn’t think that girls needed to study, because when they get married their husbands take care of them. We had to help in the house and take care of the little kids, do laundry, cooking and cleaning.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> Do you have a favorite family memory?
+                      <br>
+                      <br>
+                      <strong>Asplund:</strong> It was fun growing up with a bunch of kids, especially when we were having breakfast. We would have to cook a lot of flour or corn for tortillas and fry eggs. The kids would start gathering around the table. Everybody got a little bit here and a little bit there. And even after breakfast the kids would still be hungry. They would be looking in the fry pan and trying to lick it to get more.
+                      <br>
+                      <br>
+                      I’ll never forget all the laughing and fighting while we were eating breakfast or eating lunch. We were so happy talking and telling each other how we felt. My mom, my dad and us kids, that was the best. Even if we were only eating eggs with tortillas, we were so happy.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> Do you feel like that around your table now?
+                      <br>
+                      <br>
+                      <strong>Asplund:</strong> Not anymore. Everybody has different schedules. I work and everybody else works. Nobody is home, so sometimes I am eating all by myself. But we are a very close family so we are always together. We are always having family parties and inviting each other to spend time together, because I think that is what we miss.
+                      <br>
+                      <br>
+                      Posted 20th July 2008 by <a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="popupBoxTwoPosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxTwoPosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                    <img src="images/Whitelady.jpg">
+                      <p>
+                      <br>
+                      <strong>Intro:</strong> Nine years ago, Sabrina Ferguson left Venezuela for the United States. She was leaving with Daniel, a man she had met four months before on the internet. She was trusting that Daniel was the man of her dreams but she had her doubts along the way.
+                      <br>
+                      <br>
+                      <strong>Ferguson:</strong> My parents had been trying for thirteen years to have a child. They finally decided to adopt. They contacted an attorney in Florida and told him they were looking for a newborn baby to adopt. The attorney found an expectant mother who was giving her child up for adoption. All the necessary papers were signed. The mom gave me up when I was born and my parents took me back to Venezuela where I was raised.
+                      <br>
+                      <br>
+                      My mom was from Argentina and my dad is from Venezuela. But luckily for me, even though I spent the first twenty-eight years of my life in Venezuela, I still retained my American citizenship, which is what allowed me to come here nine years ago.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> Why did you come?
+                      <br>
+                      <br>
+                      <strong>Ferguson:</strong> I met my husband on jdate.com. We chatted for approximately two months and spoke on the phone regularly. And then one day he said that he was coming to Venezuela in July and he did. Two months later he showed up. He stayed a week. At the end of that week I left with him.
+                      <br>
+                      <br>
+                      The day we left my parents came with Daniel and me to the airport in a taxi. They were not very happy. Their only child was leaving with a man she had only known, in person, for about a week, even though we had actually known each other for a couple of months. But I was determined to go and they realized they had no choice. I was twenty-eight years old. But I did have a two-way ticket just in case things didn’t work out. But it was pretty scary the way I came here. We landed in Denver late in the afternoon and it was starting to get dark as we drove towards the mountains to his home in Redstone. I was used to a city where I was surrounded by all the lights and I could see people and houses. But when we got outside of the city there were few lights and I began to wonder.
+                      <br>
+                      <br>
+                      He kept telling me, “We are almost there.” And I was thinking, “We are almost where?” That went on for almost three and a half hours. Suddenly he made a turn into this really dark place and said, “OK, we’re here!” At that point I was really scared. I couldn’t see anything it was totally dark and I thought, “Oh my gosh what have I gotten myself into?”
+                      <br>
+                      <br>
+                      It is a great story the way it ended. We got married and now have three wonderful children, but it could have been the opposite.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> So what thoughts ran through your head at the time?
+                      <br>
+                      <br>
+                      <strong>Ferguson:</strong> Did I do the right thing? Who is this guy? What is going to happen to me? It was very scary time.
+                      <br>
+                      <br>
+                      Many of my friends have told me that I really took a huge risk. But I guess you have to take a risk once in a while. Even my parents, who were so afraid and upset at losing me in that way, came to realize that it was the best thing I ever did. They got to see me starting my family. They knew I was much happier and that I belonged here.
+                      <br>
+                      <br>
+                      Posted 3rd June 2009 by <a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="popupBoxThreePosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxThreePosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                      <img src="http://4.bp.blogspot.com/-MVWWSNwJIC0/Tq2f6bBrfdI/AAAAAAAAAXw/9GVcWqtcPgw/s1600/BERSHENYI%2BSTEPHEN.jpg">
+                      <p>
+                      <br>
+                      <strong>Bershenyi:</strong> My grandparents, Joseph Victor Bershenyi and my grandmother Maria Terazia Arth Bershenyi came to this country in 1903, crossing the Atlantic Ocean in steerage on a passenger ship. They landed at Ellis Island and were processed through, and during the processing, they encountered their first challenge in the new world, which was a pretty significant one in terms of their personal lives because they met with a customs agent who couldn’t come to grips with the fact that name was spelled B-E-R-S-Z-E-N-Y-I, so he changed it to B-E-R-S-C-H-E-N-Y.
+                      <br>
+                      <br>
+                      When they were processed through, they boarded a train in New York City and headed west, their final destination being Glenwood Springs, Colorado where they had a job awaiting them on a ranch owned by a man named George Hamrick, who had paid their passage across the ocean.
+                      <br>
+                      <br>
+                      As they were traveling across country on the train, they had a significant layover, almost a day’s layover in St. Louis. There were people at the train depot recruiting bricklayers and stonemasons because St. Louis was in the midst of building all of the buildings for the World’s Fair. And my grandfather, being a classically trained stone mason from his time in Budapest, almost stayed in St. Louis to go to work laying stone. But he and my grandmother decided that they really had no choice but to come to Glenwood since they were indentured to Mr. Hamrick for the amount of their passage and had that debt to repay.
+                      <br>
+                      <br>
+                      They came ahead to Glenwood Springs, on the train, and when they got off the train with all their worldly belongings they were met by a buckboard and were taken from the train depot in Glenwood to the Hamrick Ranch where they began their life in this country in earnest.
+                      <br>
+                      <br>
+                      In the intervening years they owned and or worked and rented several ranches in the valley. And by 1947, they were able to purchase the very ranch owned by George Hamrick, for whom they had first come to this country to work.
+                      <br>
+                      <br>
+                      Posted 23rd June 2008 by<a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="popupBoxFourPosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxFourPosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                      <img src="http://3.bp.blogspot.com/-ryYAAP0IYU0/Ts0fm2scuFI/AAAAAAAAAa0/VMW-Utbchg8/s1600/SCALZO%2BJOHN.jpg">
+                      <p>
+                      <br>
+                      <strong>Intro:</strong> John Scalzo’s family came from Calabria, one of the poorest parts of Italy, where many Calabrian families had to subsist on pennies a day. John describes how the strong sense of community and the ability to “make do” helped poor Italian immigrants succeed and prosper.
+                      <br>
+                      <br>
+                      <strong>Walter Gallacher:</strong> Was family important to you growing up?
+                      <br>
+                      <br>
+                      <strong>John Scalzo:</strong> Oh yes, yes it was. We had to pay attention. We had a lot of good food. One thing though, what you took and put on your plate you ate. You didn’t say “I don’t like this, I don’t like that”. You ate what you put on your plate.
+                      <br>
+                      <br>
+                      And we had a lot of good food, but beef was a luxury. The only time we ever had any beef was when we had beef ribs that my mother would use for stew or spaghetti sauce. We raised rabbits and chickens for our meat and we’d always buy two hogs a year. My dad would get together with other farmers in the area and they would help each other butcher their hogs. And then we would put up our own meat. I know they did it at my dad’s place. They had a tripod and a big barrel and they’d soak the pig and skin it and butcher it and everybody would come over with their pigs and that’s the way they’d do it.
+                      <br>
+                      <br>
+                      It was a family deal, they all got together and helped each other. And then everybody would take their own meat home and process it. It would take about two weeks to do it all, by the time we made the sausage, made the rinds and rendered the lard. My mother stored food in crocks and she would put lard over the top and the lard sealed it. And when we wanted to eat what was in the crock we would take the lard off. And, of course, if we fried eggs, we fried them in the lard that we made.
+                      <br>
+                      <br>
+                      We raised or made most of our food. We even made our own wine. We would place our order for grapes with Rosso or Longo who had grocery stores in Grand Junction. My dad and other Italians in the area would pool their money and buy hundreds of pounds of grapes. Then they’d all get together at my uncle’s house, because he had a big cellar. Everybody brought their own barrel and they would make the wine together and store it in my uncle’s cellar for about three or four months. My dad had two fifteen- gallon barrels. When the wine was ready they’d all get together to pick up their barrels and lift a glass.
+                      <br>
+                      <br>
+                      Posted 24th April 2008 by <a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="popupBoxFivePosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxFivePosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                      <img src="http://4.bp.blogspot.com/-prBdUu5Oo-A/Ts0daNRMYgI/AAAAAAAAAao/BZq64Qw-y9o/s1600/GOTTARDO%2BHANYA.jpg">
+                      <p>
+                      <br>
+                      <strong>Intro:</strong> Hanya Gottardo never intended to be an immigrant. She was content with her life in Sofia, Bulgaria. All that changed the day she logged on to the internet looking for someone she could correspond with in Spanish.
+                      <br>
+                      <br>
+                      <strong>Gottardo:</strong> My journey to the United States began in the summer of 2001 when I met my husband on the internet. It was a really exciting and unique experience. I never thought it could happen to me, but it did. Life is full of surprises. We started chatting on a Spanish speaking chat room and that is how our relationship began.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> Where were you?
+                      <br>
+                      <br>
+                      <strong>Gottardo:</strong> I was in Sophia, Bulgaria, my home town, and he was in his office in Carbondale and it was a month of really beautiful exchanging of letters and phone calls and then he got to Sophia to meet me and my family. It was obvious that we were meant for each other.
+                      <br>
+                      <br>
+                      He went back to the United States and then came for the second time seven months later. We got married and when he returned here he applied for my visa, and it took us a year and a half for me to get here. I finally arrived in July of 2003
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> Was it love at first sight?
+                      <br>
+                      <br>
+                      <strong>Gottardo:</strong> Well, it wasn’t at first sight, because I received a picture three or four days after I met him online. There was a strong spiritual connection between us. I would say it was love from first click. It really turned out to be a true thing, and thank God it still is.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> Are you glad you came?
+                      <br>
+                      <br>
+                      <strong>Gottardo:</strong> I’m glad I came because I followed him. I didn’t come for economic opportunities, and never in my life actually wanted to be an immigrant. I’m glad of course because we have a wonderful family, we have a three year-old daughter. I feel like I’m at home here. With time this feeling has been growing. My husband helped me a lot to build this feeling. His support and love were tremendous and of course, I began feeling at home because of the people, the way they welcomed me and received me. This helped me a lot.
+                      <br>
+                      <br>
+                      Posted 23rd May 2008 by <a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="popupBoxSixPosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxSixPosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                      <img src="images/Guy.jpg">
+                      <p>
+                      <br>
+                      <strong>Intro:</strong> Under the dictatorship of Joseph Stalin tens of millions of people were executed or imprisoned in labor camps. These camps known as Gulags were little more than death camps. In 1953, Sandor Varallyay, a native of Hungary, was confined to one of these camps. One December day in 1956, the secret police came for him and Sandor had to choose between life and death.
+                      <br>
+                      <br>
+                      <strong>Varallyay:</strong> I came to the United States to Chicago on January 13, 1959.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> Why did you come?
+                      <br>
+                      <br>
+                      <strong>Varallyay:</strong> I was in a labor camp and I helped a group of refugees cross the border from Hungary into Austria. Some people saw me and reported me to the Secret Service and I had to decide right away to go before it was too late.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> The Secret Service was coming to get you?
+                      <br>
+                      <br>
+                      <strong>Varallyay:</strong> Yes, actually we saw them coming and my friends in the camp hid me in the attic and I stayed there until I had a clearer chance to escape through the border.
+                      <br>
+                      <br>
+                      I crossed the border during the night, after midnight. I remember it was the eighth of December 1956. I was caught by the Austrian border guards when I crossed. They already had a couple of Hungarians in custody. Thankfully these guards were kind to us and didn’t turn us in. They took us to their village to their jail. I was soaking wet and covered with mud and the jail was so warm. One of the border guards gave me his own supper, which I will never forget. (weeping)
+                      <br>
+                      <br>
+                      The next day we were transported to Vienna, Austria. We stayed there for a while until we were transferred to a refugee camp outside of Vienna. I stayed there until they called me to come to the United States. It was Christmastime 1958.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> What was your first impression of the United States?
+                      <br>
+                      <br>
+                      <strong>Varallyay:</strong> Nobody bothers you here. It is real freedom here. Over there, I tell you, I will never forget. Everybody was watching everybody, neighbors watching neighbors. Everyone was responsible for watching and reporting under the Stalin system.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> People spying on one another?
+                      <br>
+                      <br>
+                      <strong>Varallyay:</strong> Yes, there is a lot of freedom here I tell you. Over there we had no freedom. If somebody knocked on the door during the night, it was already very bad news, very bad news. There were so many people who just disappeared. We never found out where they are. Sad. So many.
+                      <br>
+                      <br>
+                      Posted 20th July 2008 by <a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="popupBoxSevenPosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxSevenPosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                      <img src="images/Man.jpg">
+                      <p>
+                      <br>
+                      <strong>Intro:</strong> In September of 2007, Paul Freeman who is principal of the Glenwood Springs High School became a U.S. citizen. Paul was born and raised in Britain by his Irish parents who immigrated in the 1950's. Here he talks about how his childhood convinced him of the importance of education.
+                      <br>
+                      <br>
+                      <strong>Freeman:</strong> I was born into a very, very poor family. My parents are Irish and they were economic migrants from Ireland in the 1950’s. One of the first jobs my father had in Yorkshire, England where I was born was digging a railway tunnel. And the means by which they dug the railway tunnel was pretty similar to the way it would have been done in the 19th century. They dynamited sections of the tunnel and then the men got in there with their pickaxes and shovels and worked twelve hour days, seven days a week. They loaded the debris onto trucks and pulled it out and that is how a railway tunnel got built.
+                      <br>
+                      <br>
+                      But it was work for my father who had had to leave school when he was fourteen.
+                      <br>
+                      <br>
+                      My mother became a domestic servant when she was fourteen. My mother came from a house where there wasn’t any description of a bathroom. She got water by crossing a field with a bucket. She dropped the bucket down into what they called a well, but I think you or I would describe it as a ditch that had water flowing in it. She lived in a two room house with eight kids lit by oil lamps where the cooking was done over a peat fire. So it was about as impoverished a life as one could have.
+                      <br>
+                      <br>
+                      But she worked in the home of a well-educated Church on Ireland vicar and it was there that she was able to observe a different way of life and she recognized that education was at the heart of that. So, although my parents didn’t know what an education was, they wanted me to have one.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> How does growing up poor serve you in your work with children?
+                      <br>
+                      <br>
+                      <strong>Freeman:</strong> Well, it does mean that what one encounters during the rest of one’s life in highly pleasurable. We didn’t have good food. We didn’t have good clothes. There was no heating in the house. The snow used to blow in through the holes in the windows and mount on the ledge. So living in a warm house, for me, has a pleasure that my children will just never understand. They imagine that people live in warm houses. I don’t imagine that. I think that to live in a warm house and be well-fed is a remarkable luxury. And the other luxuries I have had in my life like travel, going to the theater and books give me more pleasure than they might had a been born in more fortunate circumstances. I have no desire, at all, to go back to being poor. And one of the things that I say to kids is that I have been poor and I am never going to be poor again and I strongly advise them never to be poor and the way to avoid that is to get an education.
+                      <br>
+                      <br>
+                      <strong>Gallacher:</strong> What gifts did your parents give you?
+                      <br>
+                      <br>
+                      <strong>Freeman:</strong> I think the most important thing they gave me was self-confidence. They were always very supportive and very proud. I wouldn’t have had to achieve very much at all to still have enjoyed their unconditional love and praise.
+                      <br>
+                      <br>
+                      And I think if you grow up with your parents telling you that you are smart or that you are attractive, regardless of whether it is true or not, does give one the self-confidence that is a great asset in life. Because, with self-confidence, you tend to think in any situation that you are going to be able to manage it and deal with it and be successful because your parents told you from a very early age that you would.
+                      <br>
+                      <br>
+                      That was the most important gift they gave me.
+                      <br>
+                      <br>
+                      Posted 1st September 2008 by <a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="popupBoxEightPosition">
+            <div class="popupBox">
+                <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxEightPosition');">X</a></div>
+                <div class="popupBoxContent">
+                    <div class="container">
+                      <img src="http://1.bp.blogspot.com/-9q9BdPhIveM/Tq2i9F6B3EI/AAAAAAAAAX8/dvAhHCKY9WU/s1600/LEE%2BCALVIN.jpg">
+                      <p>
+                      <br>
+                      <strong>Intro:</strong> Nearly all immigrant groups have experienced discrimination in America, but none have experienced it as dramatically as the Chinese. In 1882 the United States established the Chinese Exclusion Act and for the next sixty years, the Chinese were the only ethnic group in the world that could not freely immigrate to the United States. But, the resourceful Chinese immigrant community devised a way around this injustice. They created “paper sons”. Here Calvin Lee describes his father’s experience as a “paper son” immigrating to America
+                      <br>
+                      <br>
+                      <strong>Lee:</strong> I was born in San Francisco. My parents were both born in China, the southern part of China in the 1920’s. When my father was 12 years old, the United States of America was known as “gim-san”, Gold Mountain.
+                      <br>
+                      <br>
+                      The Chinese believed that you came over here, picked gold off the streets and became wealthy, sending money back to the relatives in China or returning to China a wealthy person. However, at that time, there was a quota, the Chinese were the first people that the immigration service in America put a quota on. The U.S. government and the American people were afraid of the Chinese. The Chinese were seen as the “yellow peril” Americans were afraid that they were going to be overrun by the Chinese and so there was a permit system. Only a few people had a permit to come over.
+                      <br>
+                      <br>
+                      So when my father was twelve, his family paid a family who had a permit $1500 to allow my father to pretend to be their son. And since he was not their real son, in China he was known as a “paper son”, a son by paper only.
+                      <br>
+                      <br>
+                      That family’s last name was Lee, and that’s why my last name is Lee. It is not my real last name. My father’s real last name in China was Yee. The paper family wrote out a ten-page notebook of their biography for my father to take with him on the boat. He had to memorize their story because he was going to be interrogated by immigration services when he arrived.
+                      <br>
+                      <br>
+                      And sure enough, when he arrived from China in San Francisco Bay he was confined to a barracks and interrogated for three months. They finally released him into San Francisco where he lived with his half brother and worked in the shipyard. During World War II, he helped build battleships for the Navy.
+                      <br>
+                      <br>
+                      Posted 23rd May 2008 by <a href="https://www.blogger.com/profile/01559925386805713432">Walter Gallacher</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupBoxNinePosition">
+        <div class="popupBox">
+          <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxNinePosition');">X</a></div>
+          <div class="popupBoxContent">
+            <div class="container">
+              <img src="http://www.ardems.org/wp-content/uploads/2016/11/daca.jpg" style="width: 100%; height: 40%;">
+              <p>
+              <br>
+              On June 15, 2012, President Obama created a new policy calling for deferred action for certain undocumented young people who came to the U.S. as children. Applications under the program which is called Deferred Action for Childhood Arrivals (“DACA”) began on August 15, 2012.
+              <br>
+              <br>
+              Individuals who meet the following criteria can apply for deferred action for childhood arrivals:
+              <ul>
+              <li>are under 31 years of age as of June 15, 2012;
+              <li>came to the U.S. while under the age of 16;
+              <li>have continuously resided in the U.S. from June 15, 2007 to the present. (For purposes of calculating this five year period, brief and innocent absences from the United States for humanitarian reasons will not be included);
+              <li>entered the U.S. without inspection or fell out of lawful visa status before June 15, 2012;
+              <li>were physically present in the United States on June 15, 2012, and at the time of making the request for consideration of deferred action with USCIS;
+              <li>are currently in school, have graduated from high school, have obtained a GED, or have been honorably discharged from the Coast Guard or armed forces;
+              <li>have not been convicted of a felony offense, a significant misdemeanor, or more than three misdemeanors of any kind; and
+              <li>do not pose a threat to national security or public safety.
+              </ul>
+              Applicants will have to provide documentary evidence of the above criteria. In addition, every applicant must complete and pass a biographic and biometric background check.
+              <br>
+              <br>
+              As we learn more from USCIS we will post more information here. If you have specific questions about whether you qualify, please use the contact us page on our website to submit your question. There is also useful information on the USCIS site.
+              <br>
+              <br>
+              There are several other great web-resources available. Educators for Fair Consideration has a step-by-step DACA guide. National Immigrant Justice Center is working on an online tool which, when live, will allow you to determine your DACA eligibility. And if you are a lawyer seeking further information, we urge you to read the AIC, AILA NIP practice advisory on DACA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="popupBoxTenPosition">
+        <div class="popupBox">
+          <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxTenPosition');">X</a></div>
+          <div class="popupBoxContent">
+            <div class="container">
+              <img src="https://s-media-cache-ak0.pinimg.com/originals/da/07/75/da0775b873faf7ffa1ed3468ef8b3d87.jpg" style="width: 100%; height: 40%;">
+              <p>
+              <br>
+              There are approximately 1.5 million undocumented children in the United States, and each year tens of thousands graduate from primary or secondary school, often at the top of their classes.  For many of these children, the United States is the only home they know, and English is their first language.  In fact, many assist their parents in becoming more acclimated to U.S. society by serving as interpreters and cultural guides.  They have the potential to be future doctors, nurses, soldiers, teachers, and entrepreneurs, but they experience unique hurdles to achieving success in this country.  Through no fault of their own, their lack of status may prevent them from attending college, joining the military, or working legally. The DREAM Act would provide an opportunity for them to live up to their full potential and make greater contributions to the U.S. economy and society. 
+              <br>
+              <br>
+              Each year approximately 65,000 undocumented students graduate from high school and would be eligible under the Dream Act for conditional status and eventual permanent status.
+              <ul>
+              <li>Approximately 114,000 potential beneficiaries with at least an associate’s degree would be immediately eligible for conditional LPR status.
+              <li>Another 612,000 potential beneficiaries would be immediately eligible for conditional status because they already have a high-school diploma or GED (and would have the incentive to complete two years of college or two years of military service to be eligible for permanent status).
+              <li>934,000 children under 18 could be eligible for conditional LPR status in the future under the DREAM Act, which would provide them with incentives to finish high school and pursue a post-secondary education or join the military.
+              <li>DREAM Act-eligible immigrants live in all 50 states, but some states have far more potential beneficiaries than others.  The top ten states with the largest number of potential DREAM Act beneficiaries are California (26% of the national total), Texas (12%), Florida (9%), New York (7%), Arizona (5%), Illinois (4%), New Jersey (4%), Georgia (3%), North Carolina (2%), and Colorado (2%).  All other states combined are home to one-quarter of potential DREAM Act beneficiaries.
+              </ul>
+              According to MPI, roughly 2.1 million individuals would meet the DREAM Act’s basic age, length of residence, and age of arrival requirements upon enactment.  However, it is difficult to estimate the number of individuals who would obtain permanent resident status because it depends on their ability to complete high school, two years of college, or two years of military service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="popupBoxElevenPosition">
+        <div class="popupBox">
+          <div class="close"><a href="javascript:void(0)" onclick="toggle_visibility('popupBoxElevenPosition');">X</a></div>
+          <div class="popupBoxContent">
+            <div class="container">
+              <img src="http://www.nicholascrowley.us/wp-content/uploads/2016/01/dwi-lawyer-ny.jpg">
+              <p>
+              <br>
+              <strong>Get help</strong>
+              <br>
+              <br>
+              <strong>ImmigrationLawHelp.org</strong> is a searchable online directory of over 1,000 free or low-cost nonprofit immigration legal services providers in all 50 states. Only nonprofits that are BIA recognized or have attorneys on staff are included in the directory. Users can search ImmigrationLawHelp.org by state, zip code, or detention facility. Users can also refine their search by types and areas of legal assistance provided, populations served, languages spoken, other areas of legal assistance, and non-legal services provided. ImmigrationLawHelp.org was developed by the Immigration Advocates Network and Pro Bono Net with support from the Four Freedoms Fund.
+              <br>
+              <br>
+              <strong>http://www.freeadvice.com/</strong> 
+              <br>
+              <br>
+              Or vist the offical goverment page <strong>https://www.uscis.gov/</strong> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>Made by Agustin, Max, and Omarley</footer>
+</body>
+</html>
